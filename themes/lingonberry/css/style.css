@@ -285,14 +285,15 @@ input#s {
 body > .navigation {
 	display: none;
 	background: #000000;
+	font-family: font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
 }
 
 
 /* Nav-toggle --------------------------------------- */
 
-.navigation {
+.navigation li {
 	font-family: font-family: 'Raleway', sans-serif;
-	font-weight: 600;
 	text-transform: uppercase;
 }
 
