@@ -293,7 +293,8 @@ body > .navigation {
 /* Nav-toggle --------------------------------------- */
 
 .navigation li {
-	font-family: font-family: 'Raleway', sans-serif;
+	font-family: 'Varela Round', sans-serif;
+  	font-size: 0.6em;
 	text-transform: uppercase;
 }
 
@@ -2177,6 +2178,7 @@ p.form-allowed-tags {
 		text-align: center;
 		margin: 0;
 		position: static;
+		text-shadow: 1px 1px 1px #000000;
 	}
 
 	.header .logo {
