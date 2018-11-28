@@ -285,6 +285,8 @@ input#s {
 body > .navigation {
 	display: none;
 	background: #000000;
+	font-family: font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
 }
 
 
