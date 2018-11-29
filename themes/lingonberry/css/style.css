@@ -89,7 +89,7 @@ body {
 	border: none;
 	zoom: 1.001;
 	color: #555;
-	background: #e1e1e1;
+	background: #ccc;
 	font-family: 'Lato', 'Helvetica Neue', sans-serif;
 	font-size: 16px;
 
@@ -228,7 +228,9 @@ input#s {
 
 .header { 
 	background: rgb(0, 0, 0);
-	box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.35); 
+	-webkit-box-shadow: 0 4px 6px 0px #777;
+	   -moz-box-shadow: 0 4px 6px 0px #777;
+	        box-shadow: 0 4px 6px 0px #777; 
 }
 
 .header-inner {
@@ -263,9 +265,15 @@ input#s {
 	float: left;
 	font-size: 2.2em;
 	line-height: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	
+	
 }
 
-.header .blog-title a { color: #FFF; }
+.header .blog-title a { color: #000; }
 
 .header .blog-title a:hover { color: #2D3642; }
 
@@ -463,31 +471,24 @@ body > .navigation {
 
 
 /* -------------------------------------------------------------------------------- */
-/*	5. Main content
+/*	5. Main content  0 0 30px 4px rgba(0, 0, 0, 0.1) inset
 /* -------------------------------------------------------------------------------- */
 
 .effect6
 {
   	position:relative;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
 }
-.effect6:before, .effect6:after
+.effect6:before
 {
-	content:"";
-    position:absolute;
-    z-index:-1;
-    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
-    top:50%;
-    bottom:0;
-    left:10px;
-    right:10px;
-    -moz-border-radius:100px / 10px;
-    border-radius:100px / 10px;
+	position: relative;
+    -webkit-box-shadow: 0 10px 6px -6px #000;
+	   -moz-box-shadow: 0 10px 6px -6px #000;
+	        box-shadow: 0 10px 6px -6px #000;
 }
+
 
 .content { position: relative; }
 
@@ -512,7 +513,6 @@ body > .navigation {
 	bottom: 63px;
 	width: 2px;
 	height: 100%;
-	background: rgba(0,0,0,0.05);
 	z-index: 1;
 }
 
@@ -524,7 +524,7 @@ body > .navigation {
 .post:first-child { margin-top: 0; }
 
 .content-inner {
-	width: 87.5%;
+	width: 100%;
 	float: right;
 	position: relative;
 	padding: 5.5%;
@@ -536,8 +536,6 @@ body > .navigation {
 .content-inner:before {
 	content: "";
 	display: block;
-	border: 11px solid transparent;
-	border-right-color: #DDD;
 	position: absolute;
 	top: 47px;
 	left: -22px;
@@ -546,8 +544,6 @@ body > .navigation {
 .content-inner:after {
 	content: "";
 	display: block;
-	border: 10px solid transparent;
-	border-right-color: #FFF;
 	position: absolute;
 	top: 48px;
 	left: -20px;
